@@ -1,0 +1,208 @@
+:root {
+  --background-gradient: radial-gradient(
+      35.21% 43.76% at 5.1% 7.01%,
+      rgba(0, 135, 254, 0.149164) 0%,
+      rgba(0, 135, 254, 0.2) 0%,
+      rgba(0, 135, 254, 0) 100%
+    ),
+    radial-gradient(
+      27.36% 45.53% at 90.42% 60.07%,
+      rgba(0, 135, 254, 0.2) 0%,
+      rgba(0, 135, 254, 0) 100%
+    ),
+    #1f1f1d;
+  --primary-blue: #0087fe;
+}
+
+* {
+  margin: 0 auto;
+}
+body {
+  font-family: "Mulish", sans-serif;
+}
+/*-----Header section-----*/
+.header {
+  background: var(--background-gradient);
+  color: white;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 152px;
+  gap: 369px;
+}
+.navbar img {
+  cursor: pointer;
+}
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+.navbar-menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 152px 0px;
+}
+.header-content img {
+  width: 37%;
+  height: auto;
+}
+.header-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 568px;
+  height: 244px;
+}
+.header-heading h1 {
+  font-size: 40px;
+  margin: 0;
+}
+.header-heading p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.header-heading ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+.header-heading ul li a {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+/*-----Mobile tools section-----*/
+.mobile-tools-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 152px;
+}
+.mobile-tools-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+}
+.mobile-tools-content div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-left: 0;
+}
+.mobile-tools-content h2 {
+  color: #1f1f1d;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  padding-bottom: ;
+}
+.mobile-tools-content span {
+  color: var(--primary-blue);
+}
+/*-----Statistics section-----*/
+.statistics-section {
+  background: var(--background-gradient);
+  padding: 72px 152px;
+}
+.statistics-section hr {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 40px 0px;
+}
+.statistics-section button {
+  float: right;
+}
+.statistics {
+  color: white;
+}
+.statistics ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 48px;
+  list-style-image: url("./resources/icons/eclipse.png");
+}
+.statistics li {
+  margin-left: 0;
+}
+.statistics h6 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 10px;
+}
+.statistics p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+/*-----How we can help section-----*/
+.how-we-can-help-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 0px;
+}
+.how-we-can-help-section h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.how-we-can-help-section span {
+  color: var(--primary-blue);
+}
+.how-we-can-help-content {
+  display: grid;/*TODO---------------------------------------------------------------------TODO--------*/
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+/*-----Buttons-----*/
+.btn {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+  min-width: 146px;
+  width: auto;
+  height: 48px;
+  transition: 0.2s;
+}
+.btn-primary {
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 2px;
+}
+.btn-primary:hover {
+  background: #0e75ea;
+}
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.4);
+}

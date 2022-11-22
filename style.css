@@ -30,10 +30,6 @@ hr {
   line-height: 48px;
   color: #1f1f1d;
 }
-.section-width {
-  padding-left: 192px;
-  padding-right: 192px;
-}
 /*-----Header section-----*/
 .header {
   background: var(--background-gradient);
@@ -45,7 +41,6 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   gap: 369px;
 }
 .navbar img {
@@ -343,7 +338,6 @@ footer {
   opacity: 0.8;
 }
 /*----Mobile menu----*/
-
 .mobile-menu{
  position: absolute;
  display: flex;
@@ -368,7 +362,10 @@ footer {
 .hidden {
   display: none;
 }
-
+.section-width {
+  padding-left: 192px;
+  padding-right: 192px;
+}
 @media only screen and (max-width: 1280px) {
   .section-width {
     padding-left: 32px;
@@ -392,7 +389,7 @@ footer {
     display: none;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
   .section-width {
     padding-left: 16px;
     padding-right: 16px;

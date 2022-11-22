@@ -24,6 +24,16 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.4);
   margin: 40px 0px;
 }
+.primary-heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #1f1f1d;
+}
+.section-width {
+  padding-left: 192px;
+  padding-right: 192px;
+}
 /*-----Header section-----*/
 .header {
   background: var(--background-gradient);
@@ -224,7 +234,8 @@ hr {
   line-height: 32px;
 }
 .articles-content article > img {
-  width: 436px;
+  width: 100%;
+  height: auto;
 }
 .article-bottom {
   display: flex;
@@ -331,16 +342,33 @@ footer {
   color: rgba(255, 255, 255, 0.72);
   opacity: 0.8;
 }
-.primary-heading {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 48px;
-  color: #1f1f1d;
+/*----Mobile menu----*/
+
+.mobile-menu{
+ position: absolute;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap:20px;
+ background-color: #1f1f1d;
+ width:100%;
+ height: 100%;
 }
-.section-width {
-  padding-left: 192px;
-  padding-right: 192px;
+.mobile-menu a{
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
 }
+.menu-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+}
+.hidden {
+  display: none;
+}
+
 @media only screen and (max-width: 1280px) {
   .section-width {
     padding-left: 32px;
@@ -369,8 +397,14 @@ footer {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .navbar{
+    gap:50px;
+  }
   .navbar-menu {
     display: none;
+  }
+  .menu-btn{
+    display: block;
   }
   .header-content {
     flex-direction: column;
@@ -427,29 +461,28 @@ footer {
   .articles-content article:nth-child(3) {
     display: flex;
   }
-  footer{
-    gap:47px;
+  footer {
+    gap: 47px;
   }
-  .footer-content{ 
+  .footer-content {
     flex-direction: column;
   }
-  .footer-content hr{ 
+  .footer-content hr {
     margin: 0;
   }
-  .footer-menu{
+  .footer-menu {
     display: flex;
     margin-top: 40px;
     margin-right: auto;
     margin-left: 0;
   }
-  .footer-menu a{
+  .footer-menu a {
     font-size: 16px;
   }
-  .footer-bottom{
+  .footer-bottom {
     flex-direction: column;
-
   }
-  .footer-bottom p:last-child{
+  .footer-bottom p:last-child {
     padding-top: 30px;
   }
 }

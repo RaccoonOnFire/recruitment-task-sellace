@@ -39,7 +39,7 @@ hr {
   display: flex;
   flex-direction: row;
 
-  margin:0;
+  margin: 0;
 }
 .navbar img {
   cursor: pointer;
@@ -59,11 +59,15 @@ hr {
   color: white;
   font-weight: 700;
   font-size: 14px;
+  transition: 0.2s;
+}
+.navbar-menu a:hover {
+  color: rgba(255, 255, 255, 0.4);
 }
 .header-content {
   display: flex;
   align-items: center;
-  margin:0;
+  margin: 0;
 }
 .header-content img {
   padding-top: 30px;
@@ -102,6 +106,10 @@ hr {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.2px;
+  transition: 0.2s;
+}
+.header-heading ul li a:hover {
+  color: var(--primary-blue);
 }
 /*-----Mobile tools section-----*/
 .mobile-tools-section {
@@ -215,10 +223,23 @@ hr {
 }
 .articles-content article {
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   gap: 32px;
   max-width: 436px;
   margin-left: 0;
+}
+.articles-content article:hover > img {
+  opacity: 0.7;
+}
+.articles-content article:hover h3 {
+  color: var(--primary-blue);
+}
+.articles-content article:hover .article-bottom span {
+  margin-right: -5px;
+}
+.articles-content article:hover .article-bottom a {
+  margin-right: 0px;
 }
 .articles-content article:nth-child(3) {
   margin-right: 0;
@@ -226,10 +247,12 @@ hr {
 .articles-content article h3 {
   font-size: 20px;
   line-height: 32px;
+  transition: 0.3;
 }
 .articles-content article > img {
   width: 100%;
   height: auto;
+  transition: 0.3s;
 }
 .article-bottom {
   display: flex;
@@ -255,6 +278,7 @@ hr {
   padding-left: 10px;
   margin-right: 0;
   margin-left: 0;
+  transition: 0.3s;
 }
 /*-----Footer-----*/
 footer {
@@ -275,6 +299,9 @@ footer {
 }
 .footer-logo {
   margin-left: 0;
+}
+.footer-logo img {
+  cursor: pointer;
 }
 .footer-menu {
   margin-top: 85px;
